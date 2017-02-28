@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    
+    
+</head>
+
+<body>
+    
+    <p id="text"> Hello World</p>
+     <button id="myButton">Change Text</button>
+    <p id="secondparagraph">javaScript is ...</p>
+    <button id="secondButton">Append Text</button>
+    
+    <p id="emptyParagraph"></p>
+     <button id="thirdButton">Append Text</button>
+    
+     <p id="moreText"></p>
+     <button id="styleText">Append Text</button>
+    
+    <script type="text/javascript">
+    
+        //document is used to acccess elements inside this html
+     document.getElementById("myButton").onclick = function(){
+         
+         document.getElementById("text").innerHTML = "Hello Earth";
+     };
+    
+     document.getElementById("secondButton").onclick = function(){
+         
+         document.getElementById("secondparagraph").innerHTML =
+         document.getElementById("secondparagraph").innerHTML+"Awesome";
+     };
+    
+        //This is how you generate text or any form on a click of a button
+         document.getElementById("thirdButton").onclick = function(){
+             document.getElementById("emptyParagraph").innerHTML = "Hey Hi!";
+             
+         }
+   //Manipulating Styles with JavaScript on click of a button
+     document.getElementById("styleText").onclick = function(){
+             document.getElementById("moreText").style.color ="red";
+         
+             //document.getElementById("moreText").style.display ="none"; to make text disappear
+         //click of a button
+             
+         }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    
+    
+</head>
+
+<body>
+    
+    <p>How many fingers am I holding up?</p>
+    
+    <p input type="text" id="guess">Enter Number here<button id="button1">Guess!</button></p>
+    
+    
+  
+    
+    <script type="text/javascript">
+    
+   var inputValue = alert(Math.floor((Math.random() * 6)));
+    
+    document.getElementById("button1").onclick = function(){
+        
+        var randomNumber = Math.random();
+        
+        randomNumber = randomNumber * 6;
+        
+        randomNumber = Math.floor(randomNumber);
+        
+        if(document.getElementById("guess").value == randomNumber){
+            alert("You guessed it Right")
+        } else{
+            alert("No! The number was "+randomNumber);
+        }
+    }
+    </script>
+
+</body>
+
+</html>
